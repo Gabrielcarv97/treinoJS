@@ -1,9 +1,9 @@
-function numPrimo(number) {
+function numPrimo(n) {
   var inicio = 2;
-  while (inicio <= Math.sqrt(number)) 
-  if (number % inicio++ < 1) 
-  return 'O número '+number+' não é primo';
+  while (inicio <= Math.sqrt(n)) 
+  if (n % inicio++ < 1) 
+  return 'O número '+n+' não é primo';
   
-  return number > 1;
+  return n > 1;
 }
 console.log(numPrimo(13));

@@ -1,13 +1,14 @@
-function mdc(m,n){
-    var candidato = 0;
+function mdc(m, n) {
+    var numero = 0;
     m = parseInt(m);
     n = parseInt(n);
 
-    candidato = Math.min(m,n);
+    numero = Math.min(m, n);
 
-    while(m% candidato != 0 || n% candidato !=0){
-        candidato--;
+    while (m % numero != 0 || n % numero != 0) {
+        numero--;
     }
 
-    return candidato;
+    return numero;
 }
+console.log(mdc(40, 20))
